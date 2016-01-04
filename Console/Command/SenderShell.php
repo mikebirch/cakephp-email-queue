@@ -67,7 +67,7 @@ class SenderShell extends AppShell {
 
 				if (!isset($config['additionalParameters'])) {
 					$from = key($email->from());
-					$email->config(['additionalParameters' => "-f $from"]);
+					$email->config(array('additionalParameters' => "-f $from"));
 				}
 
 				$sent = $email
